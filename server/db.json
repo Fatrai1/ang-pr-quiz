@@ -1,0 +1,67 @@
+{
+    "students":[
+        {
+            "id": 1,
+            "name": "Kovács Vivien",
+            "email": "kovacsV@gmail.com",
+            "points": 0,
+            "active": true
+        },
+        {
+            "id": 2,
+            "name": "Gáspár László",
+            "email": "gaspar@gmail.com",
+            "points": 0,
+            "active": true
+        },
+        {
+            "id": 3,
+            "name": "Farkas András",
+            "email": "farkas@gmail.com",
+            "points": 0,
+            "active": true
+        },
+        {
+            "id": 4,
+            "name": "Meleg Zoltán",
+            "email": "meleg@gmail.com",
+            "points": 0,
+            "active": true
+        },
+        {
+            "id": 5,
+            "name": "Jankura Beáta",
+            "email": "jankura@gmail.com",
+            "points": 0,
+            "active": true
+        }
+    ],
+    "quiz": [
+        {
+            "id": 1,
+            "title": ""
+        }
+    ],
+    "questions": [
+        {"id":1,"question":"Disp fx of lower epiphysis (separation) of unsp femur, init","answers":[{"id":1,"content":"Cookley","active":true},{"id":2,"content":"Opela","active":true},{"id":3,"content":"Zaam-Dox","active":false},{"id":4,"content":"Alpha","active":false}],"ponts":55,"active":false},
+        {"id":2,"question":"Poisoning by oth nonsteroid anti-inflam drugs, acc, sequela","answers":[{"id":1,"content":"Mat Lam Tam","active":false},{"id":2,"content":"Wrapsafe","active":true},{"id":3,"content":"Viva","active":false},{"id":4,"content":"Subin","active":true}],"ponts":78,"active":false},
+        {"id":3,"question":"Fall in (into) bucket of water causing oth injury, subs","answers":[{"id":1,"content":"Temp","active":true},{"id":2,"content":"Cardguard","active":false},{"id":3,"content":"Flexidy","active":true},{"id":4,"content":"Konklux","active":true}],"ponts":94,"active":true},
+        {"id":4,"question":"Omphalitis of newborn","answers":[{"id":1,"content":"Temp","active":true},{"id":2,"content":"Latlux","active":true},{"id":3,"content":"Quo Lux","active":true},{"id":4,"content":"Vagram","active":false}],"ponts":20,"active":false},
+        {"id":5,"question":"Corrosions of oth parts of unsp eye and adnexa, init encntr","answers":[{"id":1,"content":"Overhold","active":true},{"id":2,"content":"Daltfresh","active":false},{"id":3,"content":"Latlux","active":false},{"id":4,"content":"Tresom","active":false}],"ponts":32,"active":true},
+        {"id":6,"question":"Unspecified injury of right ankle, initial encounter","answers":[{"id":1,"content":"Quo Lux","active":false},{"id":2,"content":"Cardguard","active":true},{"id":3,"content":"Cardguard","active":false},{"id":4,"content":"Pannier","active":true}],"ponts":16,"active":true},
+        {"id":7,"question":"Autoimmune thyroiditis","answers":[{"id":1,"content":"Zaam-Dox","active":true},{"id":2,"content":"Pannier","active":false},{"id":3,"content":"Viva","active":false},{"id":4,"content":"Wrapsafe","active":false}],"ponts":61,"active":false},
+        {"id":8,"question":"Sulfonamides","answers":[{"id":1,"content":"Tampflex","active":true},{"id":2,"content":"Tres-Zap","active":true},{"id":3,"content":"Bitchip","active":true},{"id":4,"content":"Konklab","active":false}],"ponts":29,"active":true},
+        {"id":9,"question":"Sltr-haris Type II physl fx lower end radius, unsp arm, sqla","answers":[{"id":1,"content":"Rank","active":false},{"id":2,"content":"Voltsillam","active":false},{"id":3,"content":"Zaam-Dox","active":true},{"id":4,"content":"Ronstring","active":true}],"ponts":25,"active":true},
+        {"id":10,"question":"Sprain of unsp part of left wrist and hand, init encntr","answers":[{"id":1,"content":"Wrapsafe","active":true},{"id":2,"content":"Temp","active":true},{"id":3,"content":"Kanlam","active":true},{"id":4,"content":"Overhold","active":true}],"ponts":29,"active":true},
+        {"id":11,"question":"Heat exposure on board sailboat","answers":[{"id":1,"content":"Redhold","active":true},{"id":2,"content":"Span","active":true},{"id":3,"content":"Domainer","active":false},{"id":4,"content":"Stronghold","active":true}],"ponts":73,"active":true},
+        {"id":12,"question":"Stress fracture, left fibula, subs for fx w nonunion","answers":[{"id":1,"content":"Alpha","active":false},{"id":2,"content":"Vagram","active":false},{"id":3,"content":"Ventosanzap","active":true},{"id":4,"content":"Andalax","active":true}],"ponts":73,"active":true},
+        {"id":13,"question":"Ischemic optic neuropathy, unspecified eye","answers":[{"id":1,"content":"Fixflex","active":false},{"id":2,"content":"Andalax","active":false},{"id":3,"content":"Mat Lam Tam","active":true},{"id":4,"content":"Voltsillam","active":false}],"ponts":94,"active":false},
+        {"id":14,"question":"Injury of other cranial nerves, right side","answers":[{"id":1,"content":"Tresom","active":false},{"id":2,"content":"Lotlux","active":false},{"id":3,"content":"Aerified","active":true},{"id":4,"content":"Flexidy","active":true}],"ponts":6,"active":true},
+        {"id":15,"question":"Other injury of inferior vena cava","answers":[{"id":1,"content":"Stringtough","active":false},{"id":2,"content":"Ronstring","active":false},{"id":3,"content":"Prodder","active":false},{"id":4,"content":"Sonsing","active":true}],"ponts":12,"active":true},
+        {"id":16,"question":"Type 1 diab with mod nonp rtnop with macular edema, unsp","answers":[{"id":1,"content":"Flexidy","active":true},{"id":2,"content":"Daltfresh","active":false},{"id":3,"content":"Otcom","active":false},{"id":4,"content":"Biodex","active":true}],"ponts":59,"active":true},
+        {"id":17,"question":"Thoracogenic scoliosis","answers":[{"id":1,"content":"Mat Lam Tam","active":true},{"id":2,"content":"Cardguard","active":true},{"id":3,"content":"Bamity","active":true},{"id":4,"content":"Subin","active":false}],"ponts":23,"active":true},
+        {"id":18,"question":"Rotation of fully erupted tooth or teeth","answers":[{"id":1,"content":"Ventosanzap","active":false},{"id":2,"content":"Biodex","active":false},{"id":3,"content":"Duobam","active":true},{"id":4,"content":"Konklab","active":false}],"ponts":29,"active":true},
+        {"id":19,"question":"Pathological fracture, right radius, subs for fx w nonunion","answers":[{"id":1,"content":"Duobam","active":false},{"id":2,"content":"Aerified","active":false},{"id":3,"content":"Zaam-Dox","active":false},{"id":4,"content":"Andalax","active":false}],"ponts":31,"active":true},
+        {"id":20,"question":"Gonorrhea complicating pregnancy","answers":[{"id":1,"content":"Temp","active":false},{"id":2,"content":"Zamit","active":true},{"id":3,"content":"Cardguard","active":false},{"id":4,"content":"Alpha","active":true}],"ponts":97,"active":false}
+    ]
+}
