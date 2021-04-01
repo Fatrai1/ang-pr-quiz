@@ -36,12 +36,15 @@
             "active": true
         }
     ],
-    "quiz": [
-        {
-            "id": 1,
-            "title": ""
+    "quizzes": [
+           {
+          "id": 2,
+          "title": "Html",
+          "description": "sronaldson0@uol.com",
+          "question": "62825 Towne Lane",
+          "active": false
         }
-    ],
+      ],
     "questions": [
         {"id":1,"question":"Disp fx of lower epiphysis (separation) of unsp femur, init","answers":[{"id":1,"content":"Cookley","active":true},{"id":2,"content":"Opela","active":true},{"id":3,"content":"Zaam-Dox","active":false},{"id":4,"content":"Alpha","active":false}],"ponts":55,"active":false},
         {"id":2,"question":"Poisoning by oth nonsteroid anti-inflam drugs, acc, sequela","answers":[{"id":1,"content":"Mat Lam Tam","active":false},{"id":2,"content":"Wrapsafe","active":true},{"id":3,"content":"Viva","active":false},{"id":4,"content":"Subin","active":true}],"ponts":78,"active":false},
