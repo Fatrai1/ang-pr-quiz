@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-12" *ngFor="let question of questions$ | async">
+
+        <div class="card  mt-3 mb-3 w-100 ">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{question.question}}</h5>
+                
+                <form>
+                    <input type="checkbox" id="answerA" name="answerA" value="{{question.answers[0]}}">
+                    <label for="answerA"> {{question.answers[0]}}</label><br>
+                    <input type="checkbox" id="answerB" name="answerB" value="{{question.answers[1]}}">
+                    <label for="answerB"> {{question.answers[1]}}</label><br>
+                    <input type="checkbox" id="answerC" name="answerC" value="{{question.answers[2]}}">
+                    <label for="answerC"> {{question.answers[2]}}</label><br>
+                    <input type="checkbox" id="answerD" name="answerD" value="{{question.answers[3]}}">
+                    <label for="answerD"> {{question.answers[3]}}</label><br><br>
+                    
+                  </form>
+                <p class="card-text">Pont: {{question.points}}</p>
+                <a [routerLink]="['/home']" class="btn btn-primary mt-auto">Következő...</a>
+                
+            </div>
+        </div>
+    </div>
+
+
+</div>

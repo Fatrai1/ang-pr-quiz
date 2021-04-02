@@ -1,0 +1,7 @@
+<div class="card mt-3 w-100">
+    <div class="card-body  d-flex flex-column">
+        <h5 class="card-title">{{ quiz.title}}</h5>
+        <p class="cars-text">{{ quiz.description }}</p>
+        <a [routerLink]="['home/'+ quiz.id]" class="btn btn-primary mt-auto">Tovább...</a>
+    </div>
+</div>

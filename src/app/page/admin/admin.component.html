@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-10 offset-1 mt-3">
+        <h2 class="text-center">Quiz List</h2>
+        <div class="col-12">
+            <button class="btn btn-primary btn-block" [routerLink]="[0]">
+                <i class="fa fa-edit"></i>
+                Add new quiz
+            </button>
+        </div>
+        <div class="col-12 col-lg-4">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="search" (keyup)="onChangePhrase($event)">
+            </form>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th (click)="onColumnSelect('id')">#</th>
+                    <th (click)="onColumnSelect('title')">Title</th>
+                    <th (click)="onColumnSelect('description')">Description</th>
+                    <th (click)="onColumnSelect('question')">Question</th>
+                    <th (click)="onColumnSelect('active')">Acive</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let quiz of quizzes$ | async | filter:'title':phrase | sorter: columnKey">
+                    <td>{{ quiz.id }}</td>
+                    <td>{{ quiz.title }}</td>
+                    <td>{{ quiz.description }}</td>
+                    <td>{{ quiz.question }}</td>
+                    <td>{{ quiz.active }}</td>
+                    <td>
+                        <div class="btn-group">
+                            <button [routerLink]="[quiz.id]" class="btn btn-info">
+                                <i class="fa fa-pencil"></i>
+                            </button>
+                            <button (click)="onDelete(quiz)" class="btn btn-danger">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
