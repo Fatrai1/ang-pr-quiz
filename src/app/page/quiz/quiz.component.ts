@@ -3,8 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Observable,of } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
-import { Question } from '../../model/question';
-import { QuestionService } from 'src/app/service/question.service';
 import { Quiz } from '../../model/quiz';
 import { QuizService } from 'src/app/service/quiz.service';
 import { NgForm } from '@angular/forms';
@@ -16,14 +14,19 @@ import { NgModule } from '@angular/core';
   styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent implements OnInit {
-  questions$ = this.questionService.getAll();
+  
   quiz$: Observable<Quiz> = this.activatedRoute.params.pipe(
     switchMap(params => {
-      return this.quizService.get(params.id);
+      if (Number(params.id) === 0) {
+        return of(new Quiz());
+      }
+      return this.quizService.get((params.id));
     })
   );
+
+  actives: string[] = ['true', 'false'];
+
   constructor(
-    private questionService: QuestionService,
     private quizService: QuizService,
     private activatedRoute: ActivatedRoute,
     private router: Router
@@ -31,5 +34,15 @@ export class QuizComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  updating: boolean = false;
 
+  onUpdate(form: NgForm, quiz: Quiz): void {
+    if (quiz.id === 0) {
+      this.quizService.create(quiz);
+    } else {
+      this.updating = true;
+      this.quizService.update(quiz);
+    }
+    this.router.navigate(['admin'])
+  }
 }

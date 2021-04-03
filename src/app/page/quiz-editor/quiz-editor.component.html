@@ -1,1 +1,36 @@
-<p>quiz-editor works!</p>
+<div class="row">
+    <div *ngIf="(quiz$ | async) as quiz" class="col-6 offset-3">
+        <form #quizForm="ngForm" (ngSubmit)="onUpdate(quizForm, quiz)">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input id="title" name="title" [(ngModel)]="quiz.title" type="text" class="form-control"
+                pattern=".{1,10}" required>
+                <div [hidden]="quizForm.controls.title?.valid" class="error-message">
+                    A title mezőnek legalább 1, maximum 10 karakterből kell állnia.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input id="description" name="description" [(ngModel)]="quiz.description" type="text"
+                class="form-control" pattern=".{1,50}" required>
+                <div [hidden]="quizForm.controls.description?.valid" class="error-message">
+                    A description mezőnek legalább 1, maximum 50 karakteresnek kell lennie.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="active">Active</label>
+                <select name="active" id="active" [(ngModel)]="quiz.active" class="form-control" required>
+                    <option *ngFor="let active of actives" [value]="active">{{ active }}</option>
+                </select>
+                <div [hidden]="quizForm.controls.active?.value" class="error-message">
+                    Az activate csak a true lehet, vagy hiba leszen!
+                </div>
+            </div>
+            <button [disabled]="quizForm.invalid || updating" type="submit" class="btn btn-primary btn-block btn-lg">
+                <i *ngIf="!updating" class="fa fa-save"></i>
+                <i *ngIf="updating" class="fa fa-refresh"></i>
+            </button>
+        </form>
+
+    </div>
+</div>
